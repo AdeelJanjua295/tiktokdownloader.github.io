@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free TikTok Video Downloader Without Watermark | Save HD Videos</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Download TikTok videos without watermark in HD directly to your device. Free, fast, and unlimited online TikTok downloader tool.">
+    <meta name="keywords" content="TikTok video downloader, TikTok downloader without watermark, Download TikTok video online free, Free TikTok video download, TikTok downloader HD">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Free TikTok Video Downloader Without Watermark">
+    <meta property="og:description" content="Save TikTok videos directly to your gallery in HD. No Watermark.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "TikTok Video Downloader",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "Download TikTok videos without watermark in HD quality."
+    }
+    </script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <i class="fab fa-tiktok"></i> TTDownloader
+        </div>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Download TikTok Videos <br><span>Without Watermark</span></h1>
+            <p>Paste the link below to save videos directly to your device.</p>
+            
+            <div class="input-group">
+                <input type="text" id="url-input" placeholder="Paste URL here (e.g. https://vm.tiktok.com/...)" autocomplete="off">
+                <button id="paste-btn"><i class="fas fa-paste"></i></button>
+                <button id="search-btn">Check Video</button>
+            </div>
+
+            <!-- Loader -->
+            <div id="loader" class="hidden">
+                <div class="spinner"></div>
+                <span>Fetching video info...</span>
+            </div>
+
+            <p id="error-msg" class="hidden"></p>
+        </div>
+    </header>
+
+    <!-- Result Section -->
+    <main id="result-section" class="hidden">
+        <div class="video-card">
+            <div class="video-preview">
+                <img id="video-cover" src="" alt="Video Thumbnail">
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+            </div>
+            <div class="video-info">
+                <h3 id="video-title">Video Title</h3>
+                <p id="video-author">@username</p>
+                
+                <div class="action-buttons">
+                    <!-- This button triggers the backend download route -->
+                    <button id="download-btn" class="btn-primary">
+                        <i class="fas fa-download"></i> Download HD (MP4)
+                    </button>
+                    <a href="#" id="reload-btn" class="btn-secondary">Download Another</a>
+                </div>
+                <small>Video will save to your default "Downloads" folder.</small>
+            </div>
+        </div>
+    </main>
+
+    <!-- SEO Content Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2>Why Use Our TikTok Downloader?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-tint-slash"></i>
+                    <h3>No Watermark</h3>
+                    <p>Get clean videos without the logo overlay.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Direct Download</h3>
+                    <p>Saves directly to your phone or PC gallery.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Super Fast</h3>
+                    <p>Powered by high-speed servers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TTDownloader. Not affiliated with TikTok.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
